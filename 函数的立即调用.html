@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>函数的立即调用</title>
+</head>
+<body>
+<button id="btn">click</button>
+<script>
+	var oBtn = document.getElementById("btn");
+	(function(){
+		// oBtn.onclick = function(){
+		// 	alert("111");
+		// };
+		alert("111");
+	})();
+	(function(){
+		// oBtn.onclick = function(){
+		// 	alert("222");
+		// };
+		alert("222");
+	}());
+</script>
+	
+</body>
+</html>
