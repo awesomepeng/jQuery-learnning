@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>基本选择器:not()</title>
+</head>
+<body>
+	<div class="aa">aaaa</div>
+	<div class="bb">bbbb</div>
+	<div>ccc</div>
+	<script src="jquery-1.12.4.js"></script>
+	<script>
+		$(function(){
+			$('div:not(.aa)').css('background','pink');
+		});
+	</script>
+</body>
+</html>
