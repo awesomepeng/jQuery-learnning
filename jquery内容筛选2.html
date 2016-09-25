@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>内容筛选:empty和parent</title>
+	<style>
+		div{
+			width: 200px;
+			height: 200px;
+			background: red;
+		}
+	</style>
+</head>
+<body>
+	<div>     </div>
+	<div></div>
+	<div>aaaa</div>
+	<div><p></p></div>
+	<script src="jquery-1.12.4.js"></script>
+	<script>
+		$(function(){
+			$('div:empty').css('border','1px solid #000');
+			$('div:parent').css('background','green');
+		});
+
+	</script>
+</body>
+</html>
