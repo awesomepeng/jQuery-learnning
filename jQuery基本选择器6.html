@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>基本选择器:last</title>
+</head>
+<body>
+	<div>
+		<p>111</p>
+		<p>222</p>
+		<p>333</p>
+	</div>
+	<script src="jquery-1.12.4.js"></script>
+	<script>
+		$(function(){
+			//$('div p:last').css('background','red');
+			$('div p').filter(':last').css('background','green');
+		});
+	</script>
+	
+</body>
+</html>
