@@ -19,10 +19,15 @@
 	<script src="jquery-1.12.4.js"></script>
 	<script>
 		$(function(){
-			$('div:empty').css('border','1px solid #000');
-			$('div:parent').css('background','green');
-		});
+			//$('div:empty').css('border','1px solid #000');
+			//$('div:parent').css('background','green');
+			$('div').filter(':empty').css('background','red');
+			$('div').filter(':parent').css('background','green');
 
+		});
+		//选择所有没有子元素的元素（包括文本节点）。
+		//这个和 :parent选择器相反。
+		//需要注意的一件重要的事情是:empty(和 :parent)的子元素包括文本节点。
 	</script>
 </body>
 </html>
