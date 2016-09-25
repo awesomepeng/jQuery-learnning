@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>内容筛选：has()和.has()</title>
+</head>
+<body>
+	<div id="div1">11111
+		<div>
+			<p>aaa</p>
+		</div>
+	</div>
+	<script src="jquery-1.12.4.js"></script>
+	<script>
+		$(function(){
+			//$('#div1:has(p)').css('background','pink');
+			$('#div1').has('p').css('background','yellow');
+		});
+	</script>
+</body>
+</html>
