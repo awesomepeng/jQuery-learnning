@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>基本选择器</title>
+</head>
+<body>
+	<ul>
+		<li>111</li>
+		<li>222</li>
+		<li>333</li>
+	</ul>
+	<script src="jquery-1.12.4.js"></script>
+	<script>
+		$(function(){
+			$('ul li:eq(1)').css('background','pink');
+			$('ul li:eq(-1)').css('background','yellow');
+			$('ul li').eq(0).css('background','red');
+		});
+	</script>
+	
+</body>
+</html>
