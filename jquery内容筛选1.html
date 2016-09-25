@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>内容筛选:contains()</title>
+</head>
+<body>
+	<div>aaaa
+		<p>ccdd</p>
+	</div>
+	<script src="jquery-1.12.4.js"></script>
+	<script>
+		$(function(){
+			$('div:contains(aaa)').css('background','pink');
+		});
+		//jQuery( ":contains(text)" )
+ //text: 用来查找的一个文本字符串。这是区分大小写的。
+	</script>
+	
+</body>
+</html>
