@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>层级选择器(prev + next)(prev + nextSblings)</title>
+</head>
+<body>
+	<div id="div1">
+		<div id="div2"></div>
+		<p>aaaaa</p>
+		<p>bbbbb</p>
+		<p>ccccc
+			<p>ddddd</p>
+		</p>
+	</div>
+	<script src="jquery-1.12.4.js"></script>
+	<script>
+		$(function(){
+			//$('#div2 + p').css('background','pink');
+			$('#div2 ~ p').css('background','blue');
+		});
+		//此例子说明的是下一个相邻兄弟选择器(prev + next)选中的是相邻的第一个兄弟，而一般兄弟选择器选中的是元素的所有兄弟
+	</script>
+	
+</body>
+</html>
