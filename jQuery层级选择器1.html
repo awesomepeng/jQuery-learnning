@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>层级选择器</title>
+</head>
+<body>
+	<div id="div1">
+		<p>aaa</p>
+		<div>
+			<p>bbb</p>
+		</div>
+	</div>
+<script src="jquery-1.12.4.js"></script>	
+<script>
+	$(function(){
+		//$('#div1 > p').css('background','red');
+		$('#div1 p').css('background','green');
+	});
+</script>
+</body>
+</html>
