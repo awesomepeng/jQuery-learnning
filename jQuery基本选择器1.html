@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>基本选择器</title>
+	<title>基本选择器:eq()和.eq()</title>
 </head>
 <body>
 	<ul>
@@ -17,6 +17,8 @@
 			$('ul li:eq(-1)').css('background','yellow');
 			$('ul li').eq(0).css('background','red');
 		});
+		//eq();的参数支持负值，而且默认从0开始，第三个
+		//$('ul li').eq(0)也能起到同样的效果。
 	</script>
 	
 </body>
