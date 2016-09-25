@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery对象缓存</title>
+</head>
+<body>
+<div id="div1">aaa
+	<p id="p1">bbb</p>
+</div>
+<script src="jquery-1.12.4.js"></script>
+<script>
+	$('#div1 #p1').css('background','red');
+	var $div1 = $('#div1');
+	$('#p1',$div1).html("ccc");
+</script>
+	
+</body>
+</html>
