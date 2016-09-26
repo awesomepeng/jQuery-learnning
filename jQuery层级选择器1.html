@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>层级选择器</title>
+	<title>层级选择器(E > F)和(E F)</title>
 </head>
 <body>
 	<div id="div1">
@@ -11,12 +11,14 @@
 			<p>bbb</p>
 		</div>
 	</div>
-<script src="jquery-1.12.4.js"></script>	
-<script>
-	$(function(){
-		//$('#div1 > p').css('background','red');
-		$('#div1 p').css('background','green');
-	});
-</script>
+	<script src="jquery-1.12.4.js"></script>	
+	<script>
+		$(function(){
+			$('#div1 > p').css('background','red');
+			$('#div1 p').css('background','green');
+		});
+		//子元素选择器(E > F)和(E F)都作为后代组合，但前者只会选择第一代后代。
+		//而第二种的后代可能是该元素的一个孩子，孙子，曾孙。
+	</script>
 </body>
 </html>

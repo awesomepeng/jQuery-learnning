@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>属性选择器[name="value"]</title>
+</head>
+<body>
+	<div class="aa">aaaa</div>
+	<div class="bb cccc">bbbb</div>
+	<div class="baac">baac</div>
+	<div>cccc</div>
+	<script src="jquery-1.12.4.js"></script>
+	<script>
+		$(function(){
+			//$('[class]').css('background','red');
+			//$('[class=bb]').css('background','green');
+			//$('[class*=aa]').css('background','yellow');
+			$('[class~=bb]').css('background','pink');
+			$('[class$=cc]').css('background','#ccc');
+			//$('[class^=bb]').css('background','blue');
+		});
+	</script>
+</body>
+</html>
