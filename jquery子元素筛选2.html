@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>子元素筛选:first-of-type</title>
+</head>
+<body>
+	<ul>
+		<p>aaa</p>
+		<li>111</li>
+		<li>222</li>
+		<li>333</li>
+		<p>bbb</p>
+	</ul>
+	<script src="jquery-1.12.4.js"></script>
+	<script>
+		$(function(){
+			$('ul li:first-of-type').css('background','red');
+			$('ul li:last-of-type').css('background','yellow');
+		});
+	</script>
+</body>
+</html>
