@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jquery表单</title>
+</head>
+<body>
+	<!-- <button>click</button> -->
+	<form>
+		<input type="button" value="Input Button"/>
+		<input type="checkbox" />男
+
+		<input type="checkbox" />女
+		<input type="file" />
+		<input type="hidden" />
+
+		<input type="image" />
+		<input type="password" />
+		<input type="radio" />
+
+		<input type="reset" />
+		<input type="submit" />
+		<input type="text" />
+
+		<select>
+			<option>Option1<option/>
+			<option>Option2<option/>
+			<option>Option3<option/>
+		</select>
+		<textarea>aaaaaaaaaa</textarea>
+	<button>Button</button>
+		</form>
+	<script src="jquery-1.12.4.js"></script>
+	<script>
+		$(function(){
+		// 	$(':button').on('click',function(){
+		// 		alert('aaaa');
+		// 	});
+			// $('input:checkbox').on('click',function(){
+			// 	alert('aaa');
+			// });
+			$('[type=checkbox]').on('click',function(){
+				alert('bbbb');
+			});
+		});
+		
+	</script>
+</body>
+</html>
